@@ -1,0 +1,45 @@
+# Env
+*.env.local
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Demo recordings
+*.mp4
+*.webm
+*.mkv
+recordings/
+
+# Real secrets (key lives here) — never commit
+.env
+
+# Build artifacts
+target/
+node_modules/
+.next/
+.venv/
+
+# Local AI-tool settings
+.claude/

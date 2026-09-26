@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      target: dev
+    volumes:
+      - ./backend:/app
+      - /app/.venv
+    env_file:
+      - .env.local
+    environment:
+      - SWARM=true
+      - ALLOWED_ORIGINS=http://localhost:3000
+
+  frontend:
+    build:
+      context: ./frontend
+      target: dev
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
