@@ -213,4 +213,4 @@ yhack/
 
 ---
 
-*Built at YHack 2026.*
+*Built MongoDB Hackathon 2026.*
